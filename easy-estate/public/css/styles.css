@@ -1,0 +1,20 @@
+:root {
+    --font-header: "Oswald", sans-serif;
+    
+    --font-body: "Noto Serif", serif
+}
+
+
+body {
+    font-family: var(--font-body);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.hero_wrapper {
+    margin: 60px 10px;
+    
+    background-color: grey;
+    height: 1800px;
+}
