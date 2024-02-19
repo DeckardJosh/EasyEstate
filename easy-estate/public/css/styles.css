@@ -1,7 +1,10 @@
 :root {
     --font-header: "Oswald", sans-serif;
     
-    --font-body: "Noto Serif", serif
+    --font-body: "Noto Serif", serif;
+
+    --font-color-mute-grey: #494949;
+    --color-seagreen: #20b2aa
 }
 
 
@@ -13,7 +16,7 @@ body {
 }
 
 .hero_wrapper {
-    margin: 60px 10px;
+    margin: 80px 10px;
     
     background-color: grey;
     height: 1800px;
