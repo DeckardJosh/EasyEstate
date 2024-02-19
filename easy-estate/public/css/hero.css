@@ -1,0 +1,35 @@
+.hero_wrapper {
+    margin: 80px 10px;
+    height: 700px;
+    border-radius: 10px;
+
+    opacity: 1;
+    /* I cannot get the background overlay to appear, on load you can see a blink of it attempting to work
+    but it will not correctly overlay.
+    
+    TODO: Figure out why this is not working
+    
+    */
+    background: url("../images/hero-single-house.jpg"), black 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* ^ */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_content {
+    font-family: var(--font-header);
+    color: white;
+    /* background-color: black; */
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+}
+

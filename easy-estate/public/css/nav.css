@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     width: 100dvw;
-    height: 60px;
+    height: 80px;
     padding: 5px 0px 5px 0px;
     overflow: hidden;
     display: flex;
@@ -32,7 +32,7 @@
 }
 
 .nav_logo {
-    padding-top: 8px;
+    padding-top: 5px;
 }
 
 .nav_link_item {
