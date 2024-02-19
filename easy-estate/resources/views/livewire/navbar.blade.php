@@ -1,34 +1,41 @@
-<div class="nav_wrapper">
-    <div class="nav_left_selection">
-        <a href="#" class="logo">
-            <div class="nav_logo">
-                logo goes here
-            </div>
-        </a>
-        <div class="nav_item">
-            Buy
+<div>
+    <nav class="nav_wrapper">
+        <div class="nav_left_selection">
+            <a href="#" class="nav_link_logo">
+                <img src="{{asset('images/easy-estate-logo.png')}}" class="nav_logo"/>
+            </a>
+            <a href="#" class="nav_link_item">
+                <div class="nav_item">
+                    Buy
+                </div>
+            </a>
+            <a href="#" class="nav_link_item">
+                <div class="nav_item">
+                    Rent
+                </div>
+            </a>
+            <a href="#" class="nav_link_item">
+                <div class="nav_item">
+                    Mortgage
+                </div>
+            </a>
         </div>
-        <div class="nav_item">
-            Rent
+        <div class="nav_right_selection">
+            <a href="#" class="nav_link_item">
+                <div class="nav_item">
+                    Saved Homes
+                </div>
+            </a>
+            <a href="#" class="nav_link_item">
+                <div class="nav_item">
+                    Saved Searches
+                </div>
+            </a>
+            <a href="#" class="nav_link_item">
+                <div class="nav_item nav_login">
+                    Sign up or Log in
+                </div>
+            </a>
         </div>
-        <div class="nav_item">
-            Mortgage
-        </div>
-    </div>
-    <div class="nav_right_selection">
-        <div class="nav_item">
-            Saved Homes
-        </div>
-        <div class="nav_item">
-            Saved Searches
-        </div>
-        <div class="nav_item nav_login">
-            Sign up or Log in
-        </div>
-        <div class="nav_hamburger">
-            <div class="nav_ham_bar1"></div>
-            <div class="nav_ham_bar2"></div>
-            <div class="nav_ham_bar3"></div>
-        </div>
-    </div>
+    </nav>
 </div>
