@@ -1,0 +1,31 @@
+.recent_house_wrapper {
+    margin: 100px 40px;
+}
+
+.recent_house_header {
+    text-align: center;
+    font-family: var(--font-header);
+}
+
+.recent_houses {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.card_link_wrapper {
+    text-decoration: none;
+    color: black;
+}
+
+.recent_house_card_header {
+    font-family: var(--font-header);
+    text-align: start;
+    font-weight: bold;
+}
+
+.recent_houses_card {
+    margin: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
