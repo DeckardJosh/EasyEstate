@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\HouseController;
 use Illuminate\Support\Facades\Route;
+use App\Models\House;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::resource('houses', HouseController::class);
