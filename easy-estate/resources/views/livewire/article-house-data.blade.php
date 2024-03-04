@@ -3,16 +3,17 @@
 ?>
 
 <div class="recent_house_wrapper">
-    <h1 class="recent_house_header">Newly listed homes</h1>
+    <h1 class="recent_house_header">Newly listed Homes</h1>
 
-    <div class="recent_houses">
+    <button type="button" class="left_button" id="slideLeft"> <i class="fa fa-angle-left"></i></button>
+    <button type="button" class="right_button" id="slideRight"><i class="fa fa-angle-right"></i></button>
+    <div class="recent_houses" id="recent_houses_container_id">
     {{-- Looping through recent database records, sorted by ID desc --}}
             @if(!empty($houses))
                 @foreach ($houses as $house)
                 <?php
                     $loremId = rand(1, 100)
                 ?>
-
                     <div class="card recent_houses_card" style="width: 16rem;">
                         <a class="card_link_wrapper" href="#">
                             <img src="https://picsum.photos/id/{{$loremId}}/150/100" class="card-img-top" alt="LoremPicsum placeholder photo for house">
@@ -25,17 +26,10 @@
 
                 @endforeach
             @endif
-
             <div class="card recent_houses_card" style="width: 16rem;">
                 <a href="#">
                     <img src="/images/view-more.jpg" class="card-img-top" alt="View More">
                 </a>
             </div>
     </div>
-
-    {{-- <ul>
-        @foreach ($houses as $house)
-        <li>{{$house->street_address}}</li>
-        @endforeach
-    </ul> --}}
 </div>
