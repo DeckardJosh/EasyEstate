@@ -5,13 +5,59 @@
 .recent_house_header {
     text-align: center;
     font-family: var(--font-header);
+    margin-bottom: 30px;
 }
 
 .recent_houses {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* background-color: #efefef; */
+    border-radius: 10px;
+    /* This is for the scrolling container */
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* end scrolling container */
+
     font-family: var(--font-body);
     font-size: 1rem;
+}
+
+.recent_houses::-webkit-scrollbar {
+    height: 2px;
+    background: #efefef;
+    color: white;
+}
+
+.recent_houses::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+.left_button {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    margin-left: 10px;
+    transform: translateY(175px);
+}
+
+.right_button {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    margin-right: 10px;
+    transform: translateY(175px);
+}
+
+.left_button, .right_button {
+    border-radius: 10px;
+    border-color: transparent;
+    text-align: center;
+    font-size: 20px;
+    background-color: #efefef;
+    color: grey;
 }
 
 .card_link_wrapper {
@@ -26,6 +72,10 @@
 }
 
 .recent_houses_card {
+    /* for scrolling container */
+    flex: 0 0 auto;
+    /* end scrolling container */
+
     margin: 20px 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
