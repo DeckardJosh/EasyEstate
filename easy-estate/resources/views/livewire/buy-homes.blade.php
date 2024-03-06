@@ -36,15 +36,17 @@
                     $loremId = rand(1, 100)
                 ?>
                 <div class="buy_home_single_card">
-                    <div class="buy_home_card_image">
-                        <img src="https://picsum.photos/id/{{$loremId}}/600/400" class="card-img-top" alt="LoremPicsum placeholder photo for house">
-                    </div>
-                    <div class="buy_home_card_data">
-                        <h5 class="buy_home_card_price">${{number_format($house->price)}}</h5>
-                        <p class="buy_home_card_body"><i class="fa fa-solid fa-bed fa-xs"></i> {{$house->bed}} bed <i class="fa fa-solid fa-bath fa-xs"></i> {{$house->bath}} bath, <i class="fa fa-solid fa-caret-up"></i> {{$house->sqft}} sqft</p>
-                        <p class="buy_home_card_address">{{$house->street_address}}</p>
-                        <p class="buy_home_card_state"> {{$house->street_city}}, {{$house->street_state}}</p>
-                    </div>
+                    <a class="buy_home_link_wrapper" href="#">
+                        <div class="buy_home_card_image">
+                            <img src="https://picsum.photos/id/{{$loremId}}/600/400" class="card-img-top" alt="LoremPicsum placeholder photo for house">
+                        </div>
+                        <div class="buy_home_card_data">
+                            <h5 class="buy_home_card_price">${{number_format($house->price)}}</h5>
+                            <p class="buy_home_card_body"><i class="fa fa-solid fa-bed fa-xs"></i> {{$house->bed}} bed <i class="fa fa-solid fa-bath fa-xs"></i> {{$house->bath}} bath, <i class="fa fa-solid fa-caret-up"></i> {{$house->sqft}} sqft</p>
+                            <p class="buy_home_card_address">{{$house->street_address}}</p>
+                            <p class="buy_home_card_state"> {{$house->street_city}}, {{$house->street_state}}</p>
+                        </div>
+                    </a>
                 </div>
                 @endforeach
                 <div class="buy_homes_cards_pagination">
