@@ -1,0 +1,63 @@
+.buy_homes_wrapper {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy_homes_search {
+    width: 500px;
+}
+
+.buy_homes_filters {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.buy_homes_cards {
+    flex-wrap: wrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.buy_home_single_card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.buy_home_card_image {
+    /* background-color: black; */
+    height: 400px;
+    width: 600px;
+    overflow: none;
+}
+
+.buy_home_card_image img {
+    border-radius: 15px;
+}
+
+.buy_home_card_data {
+    /* background-color: grey; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 15px;
+    height: 125px;
+}
+
+.buy_home_card_data p{
+    margin-bottom: 3px;
+}
+
+.buy_homes_cards_pagination {
+    margin-top: 40px;
+    height: 50px;
+    overflow: none;
+}

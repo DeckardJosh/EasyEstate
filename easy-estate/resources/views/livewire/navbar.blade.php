@@ -1,20 +1,20 @@
 <div>
     <nav class="nav_wrapper">
         <div class="nav_left_selection">
-            <a href="#" class="nav_link_logo">
+            <a href="/" class="nav_link_logo">
                 <img src="{{asset('images/easy-estate-logo.png')}}" class="nav_logo"/>
             </a>
-            <a href="#" class="nav_link_item">
+            <a href="/buy" class="nav_link_item">
                 <div class="nav_item">
                     Buy
                 </div>
             </a>
-            <a href="#" class="nav_link_item">
+            <a href="/rent" class="nav_link_item">
                 <div class="nav_item">
                     Rent
                 </div>
             </a>
-            <a href="#" class="nav_link_item">
+            <a href="/mortgage" class="nav_link_item">
                 <div class="nav_item">
                     Mortgage
                 </div>
