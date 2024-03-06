@@ -32,4 +32,15 @@
             </div>
         </div>
     </div>
+    <div class="help_search">
+        <h4>Check out some houses!</h4>
+        <form method="POST" action="#">
+            <div class="input-group mt-3">
+                <input type="text" class="form-control" placeholder="Search by State or City" aria-label="Search" aria-describedby="search">
+                <button type="button" class="btn btn-danger">
+                    Search
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
