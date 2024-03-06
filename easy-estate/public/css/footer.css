@@ -1,0 +1,23 @@
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_copy {
+    width: 800px;
+}
+
+.footer_copy_one {
+    font-size: .65rem;
+}
+
+.footer_image_container {
+    overflow: hidden;
+}
+
+.footer_image_one {
+    transform: rotateY(180deg);
+    /* transform: translateY(10px); */
+}
