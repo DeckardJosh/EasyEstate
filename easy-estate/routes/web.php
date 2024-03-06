@@ -19,4 +19,8 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/buy', function() {
+    return view('buy');
+});
+
 Route::resource('houses', HouseController::class);
