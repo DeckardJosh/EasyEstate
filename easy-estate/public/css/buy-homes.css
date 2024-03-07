@@ -109,36 +109,10 @@
 .dropdown_menu_item {
     padding: 5px 5px 5px 5px;
 }
-/* 
-.filter_dropdown_button {
-    display: flex;
-    background-color: #efefef;
-    color: black;
-    width: 75px;
-    height: 40px;
-}
 
-.filter_dropdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.buy_homes_filters {
-    transform: translateY(20px);
-    background-color: aqua;
+.buy_homes_list_count {
+    margin-right: 30px;
+    text-align: right;
+    width: 100%;
     color: black;
 }
-
-.buy_homes_check_section {
-    width: 125px;
-}
-
- .filter_dropdown_button:hover .filter_dropdown {
-    display: flex;
- }
-
-.buy_homes_check_section {
-    display: flex;
-    flex-direction: column;
-} */
