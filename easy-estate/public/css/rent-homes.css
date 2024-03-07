@@ -1,0 +1,118 @@
+.rent_homes_wrapper {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rent_homes_search {
+    width: 500px;
+}
+
+.rent_homes_filters {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.rent_homes_cards {
+    flex-wrap: wrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.rent_home_link_wrapper {
+    text-decoration: none;
+    color: black;
+}
+
+.rent_home_single_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.rent_home_single_card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .rent_home_card_data{
+        background-color: #efefef;
+    }
+}
+
+.rent_home_card_image {
+    /* background-color: black; */
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.rent_home_card_image img:hover{
+    border-radius: 15px;
+    transform: scale(1.15);
+    transition-duration: .5s;
+    overflow: hidden;
+}
+
+.rent_home_card_image img {
+    border-radius: 15px;
+}
+
+.rent_home_card_data {
+    /* background-color: grey; */
+    padding: 10px 20px 10px 20px;
+    line-height: 15px;
+    height: 125px;
+}
+
+.rent_home_card_data p{
+    margin-bottom: 3px;
+}
+
+.rent_homes_cards_pagination {
+    margin-top: 40px;
+    height: 50px;
+    overflow: none;
+}
+
+.rent_filters{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: #efefef;
+}
+
+.rent_dropdowns {
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.rent_homes_search {
+    padding: 10px 30px 20px 10px;
+}
+
+.dropdown_menu_item {
+    padding: 5px 5px 5px 5px;
+}
+
+.rent_homes_list_count {
+    margin-right: 30px;
+    text-align: right;
+    width: 100%;
+    color: black;
+}
