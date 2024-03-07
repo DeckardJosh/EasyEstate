@@ -14,9 +14,9 @@
                     Rent
                 </div>
             </a>
-            <a href="/mortgage" class="nav_link_item">
+            <a href="/about" class="nav_link_item">
                 <div class="nav_item">
-                    Mortgage
+                    About
                 </div>
             </a>
         </div>

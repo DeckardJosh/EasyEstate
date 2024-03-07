@@ -18,15 +18,21 @@
     <title>Easy Estate Buy</title>
 </head>
 <body>
+    <header>
     {{-- nav --}}
         <livewire:navbar/>
     {{-- end nav --}}
+    </header>
+    <section>
     {{-- buy-homes --}}
         <livewire:buy-homes/>
     {{-- end buy-homes --}}
+    </section>
+    <footer>
     {{-- footer component --}}
         <livewire:footer />
     {{-- end footer --}}
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="{{ asset('js/index.js') }}"></script>
     @livewireScripts
