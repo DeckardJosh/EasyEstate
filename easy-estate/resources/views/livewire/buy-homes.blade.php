@@ -1,3 +1,21 @@
+{{--
+    function responseCode($url){
+    $headers = get_headers($url, 1);
+
+    $responseCode = $headers[0]; // This will contain something like "HTTP/1.1 200 OK"
+
+    // Extracting the response code from the string
+    preg_match("/\d{3}/", $responseCode, $matches);
+    $responseCode = $matches[0];
+        if ($responseCode == '404'){
+            return false;
+        } else{
+            return true;
+        }
+    }
+--}}
+
+
 <div class="buy_homes_wrapper">
     <div class="buy_filters mb-2">
         <div class="buy_dropdowns">
@@ -173,7 +191,8 @@
                             <p class="buy_home_card_body"><i class="fa fa-solid fa-bed fa-xs"></i> {{$house->bed}} bed <i class="fa fa-solid fa-bath fa-xs"></i> {{$house->bath}} bath, <i class="fa fa-solid fa-caret-up"></i> {{$house->sqft}} sqft</p>
                             <p class="buy_home_card_address">{{$house->street_address}}</p>
                             <p class="buy_home_card_state"> {{$house->street_city}}, {{$house->street_state}}</p>
-                            <p class="buy_home_card_state"> dish:{{$house->dishwasher}}, dis:{{$house->disposal}}, wash:{{$house->washer}}, dryer:{{$house->dryer}}, fri:{{$house->fridge}}, heat:{{$house->heat_cooling}}, gar:{{$house->garage}} </p>
+                            {{-- <p>{{responseCode("https://picsum.photos/id/$loremId/600/400")}}</p> --}}
+                            {{-- <p class="buy_home_card_state"> dish:{{$house->dishwasher}}, dis:{{$house->disposal}}, wash:{{$house->washer}}, dryer:{{$house->dryer}}, fri:{{$house->fridge}}, heat:{{$house->heat_cooling}}, gar:{{$house->garage}} </p> --}}
                         </div>
                     </a>
                 </div>

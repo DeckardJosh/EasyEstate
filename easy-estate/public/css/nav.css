@@ -40,6 +40,12 @@
     color: var(--font-color-mute-grey);
 }
 
+.nav_link_item.active {
+    background-color: var(--color-seagreen);
+    border-radius: 10px;
+    color: white;
+}
+
 .nav_item {
     display: flex;
     justify-content: center;

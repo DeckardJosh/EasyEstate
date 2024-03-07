@@ -17,12 +17,6 @@ class BuyHomes extends Component
     public $storiesSelectedValue = 'any';
     public $utilitiesSelectedValue = [];
 
-    // public function render()
-    // {
-    //     $houses = House::where('for_purchase', 1)->paginate(12);
-    //     return view('livewire.buy-homes', ['houses' => $houses]);
-    // }
-
     public function filterClear(){
         $this->bedsSelectedValue = 'any';
         $this->bathsSelectedValue = 'any';
