@@ -23,4 +23,8 @@ Route::get('/buy', function() {
     return view('buy');
 });
 
+Route::get('/rent', function(){
+    return view('rent');
+});
+
 Route::resource('houses', HouseController::class);
