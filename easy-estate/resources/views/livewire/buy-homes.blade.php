@@ -54,4 +54,107 @@
                 </div>
             @endif
     </div>
+
+    <div class="check_test">
+        <div class="buy_homes_check_section">
+            <h5 class="buy_homes_check_section_header">Beds</h5>
+            {{-- <label>
+                <input type="checkbox" value="one" wire:model="bedsSelectedValue"/>
+                One
+            </label>
+            <label>
+                <input type="checkbox" value="two" wire:model="bedsSelectedValue"/>
+                Two
+            </label>
+            <label>
+                <input type="checkbox" value="three" wire:model="bedsSelectedValue"/>
+                Three
+            </label>
+            <label>
+                <input type="checkbox" value="four" wire:model="bedsSelectedValue"/>
+                Four
+            </label>
+            <label>
+                <input type="checkbox" value="five" wire:model="bedsSelectedValue"/>
+                Five
+            </label> --}}
+
+            <input type="checkbox" value="one" wire:model="bedsSelectedValue"/> One
+            <input type="checkbox" value="two" wire:model="bedsSelectedValue"/> Two
+            <input type="checkbox" value="three" wire:model="bedsSelectedValue"/> Three
+            <input type="checkbox" value="four" wire:model="bedsSelectedValue"/> Four
+            <input type="checkbox" value="five" wire:model="bedsSelectedValue"/> Five
+
+            @foreach ($bedsSelectedValue as $value)
+                <p>{{$value}}</p>
+            @endforeach
+            {{-- <div class="form-check">
+                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="1" id="bedsCheckOne">
+                <label class="form-check-label" for="bedsCheckOne">
+                    1
+                </label>
+              </div>
+              <div class="form-check">
+                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="2" id="bedsCheckTwo">
+                <label class="form-check-label" for="bedsCheckTwo">
+                    2
+                </label>
+              </div>
+              <div class="form-check">
+                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="3" id="bedsCheckThree">
+                <label class="form-check-label" for="bedsCheckThree">
+                    3
+                </label>
+              </div>
+              <div class="form-check">
+                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="4" id="bedsCheckFour">
+                <label class="form-check-label" for="bedsCheckFour">
+                    4
+                </label>
+              </div>
+              <div class="form-check">
+                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="5" id="bedsCheckFive">
+                <label class="form-check-label" for="bedsCheckFive">
+                    5
+                </label>
+              </div> --}}
+        </div>
+
+        {{-- checks: {{var_export($bedsCheck)}} --}}
+
+
+        {{-- <div class="buy_homes_radio_section">
+            <h5 class="buy_homes_radio_section_header">Beds</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    3
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    4
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    5
+                </label>
+              </div>
+        </div> --}}
+    </div>
 </div>
