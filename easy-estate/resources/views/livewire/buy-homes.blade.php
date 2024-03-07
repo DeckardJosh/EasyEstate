@@ -1,34 +1,219 @@
 <div class="buy_homes_wrapper">
-    <div class="buy_homes_search">
-        <form method="POST" action="#">
-            <div class="input-group mt-3">
-                <input type="text" class="form-control" placeholder="Search by State or City" aria-label="Search" aria-describedby="search">
-                <button type="button" class="btn btn-danger">
-                    Search
+    <div class="buy_filters">
+        <div class="buy_dropdowns">
+            <div class="dropdown dropdown_beds">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Beds
                 </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bedsSelectedValue" type="checkbox" value="1"/> One
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bedsSelectedValue" type="checkbox" value="2"/> Two
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bedsSelectedValue" type="checkbox" value="3"/> Three
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bedsSelectedValue" type="checkbox" value="4"/> Four
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bedsSelectedValue" type="checkbox" value="5"/> Five
+                    </label>
+                  </li>
+                </ul>
             </div>
-        </form>
+            <div class="dropdown dropdown_baths">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Baths
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bathsSelectedValue" type="checkbox" value="1"/> One
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bathsSelectedValue" type="checkbox" value="2"/> Two
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="bathsSelectedValue" type="checkbox" value="3"/> Three
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <div class="dropdown dropdown_stories">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Stories
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="storiesSelectedValue" type="checkbox" value="1"/> One
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="storiesSelectedValue" type="checkbox" value="2"/> Two
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="storiesSelectedValue" type="checkbox" value="3"/> Three
+                    </label>
+                  </li>
+                </ul>
+            </div>
+            <div class="dropdown dropdown_utilities">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Utilities
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="utilitiesSelectedValue" type="checkbox" value="dishwasher"/> Dishwasher
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="utilitiesSelectedValue" type="checkbox" value="disposal"/> Disposal
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="utilitiesSelectedValue" type="checkbox" value="washer"/> Washer
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="utilitiesSelectedValue" type="checkbox" value="dryer"/> Dryer
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="utilitiesSelectedValue" type="checkbox" value="fridge"/> Fridge
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="utilitiesSelectedValue" type="checkbox" value="garage"/> Garage
+                    </label>
+                  </li>
+                  <li class="dropdown_menu_item">
+                    <label>
+                        <input wire:model.live="utilitiesSelectedValue" type="checkbox" value="heat_cooling"/> Heat/Cooling
+                    </label>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="buy_homes_search">
+            <form method="POST" action="#">
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Search by State or City" aria-label="Search" aria-describedby="search">
+                    <button type="button" class="btn btn-danger">
+                        Search
+                    </button>
+                </div>
+            </form>
+        </div>
+        {{-- <div class="test_value">
+            Beds: {{var_export($bedsSelectedValue)}}
+            Baths: {{var_export($bathsSelectedValue)}}
+            Stories: {{var_export($storiesSelectedValue)}}
+            Utilities: {{var_export($utilitiesSelectedValue)}}
+        </div> --}}
     </div>
-    <div class="buy_homes_filters">
-        <div class="buy_filter">
-            1
+    {{-- <div class="btn btn-secondary filter_dropdown_button">Filters
+        <div class="filter_dropdown">
+            <form method="GET" action="/buy" class="buy_homes_filters">
+                <div class="buy_homes_check_section">
+                    <h5 class="buy_homes_check_section_header">Beds</h5>
+                    <label>
+                        <input wire:model="bedsSelectedValue" type="checkbox" value="one"/> One
+                    </label>
+                    <label>
+                        <input wire:model="bedsSelectedValue" type="checkbox" value="two"/> Two
+                    </label>
+                    <label>
+                        <input wire:model="bedsSelectedValue" type="checkbox" value="three"/> Three
+                    </label>
+                    <label>
+                        <input wire:model="bedsSelectedValue" type="checkbox" value="four"/> Four
+                    </label>
+                    <label>
+                        <input wire:model="bedsSelectedValue" type="checkbox" value="five"/> Five
+                    </label>
+        
+                </div>
+                <div class="buy_homes_check_section">
+                    <h5 class="buy_homes_check_section_header">Baths</h5>
+                    <label>
+                        <input wire:model="bathsSelectedValue" type="checkbox" value="one"/> One
+                    </label>
+                    <label>
+                        <input wire:model="bathsSelectedValue" type="checkbox" value="two"/> Two
+                    </label>
+                    <label>
+                        <input wire:model="bathsSelectedValue" type="checkbox" value="three"/> Three
+                    </label>
+                </div>
+                <div class="buy_homes_check_section">
+                    <h5 class="buy_homes_check_section_header">Stories</h5>
+                    <label>
+                        <input wire:model="storiesSelectedValue" type="checkbox" value="one"/> One
+                    </label>
+                    <label>
+                        <input wire:model="storiesSelectedValue" type="checkbox" value="two"/> Two
+                    </label>
+                    <label>
+                        <input wire:model="storiesSelectedValue" type="checkbox" value="three"/> Three
+                    </label>
+                </div>
+                <div class="buy_homes_check_section">
+                    <h5 class="buy_homes_check_section_header">Utilities</h5>
+                    <label>
+                        <input wire:model="utilitiesSelectedValue" type="checkbox" value="dishwasher"/> Dishwasher
+                    </label>
+                    <label>
+                        <input wire:model="utilitiesSelectedValue" type="checkbox" value="disposal"/> Disposal
+                    </label>
+                    <label>
+                        <input wire:model="utilitiesSelectedValue" type="checkbox" value="washer"/> Washer
+                    </label>
+                    <label>
+                        <input wire:model="utilitiesSelectedValue" type="checkbox" value="dryer"/> Dryer
+                    </label>
+                    <label>
+                        <input wire:model="utilitiesSelectedValue" type="checkbox" value="fridge"/> Fridge
+                    </label>
+                    <label>
+                        <input wire:model="utilitiesSelectedValue" type="checkbox" value="garage"/> Garage
+                    </label>
+                    <label>
+                        <input wire:model="utilitiesSelectedValue" type="checkbox" value="heat-cooling"/> Heat/Cooling
+                    </label>
+                </div>
+                <div class="buy_homes_check_section">
+                <input type="submit" class="btn btn-danger" value="Update Filters"/>
+                </div>
+            </form>
         </div>
-        <div class="buy_filter">
-            1
-        </div>
-        <div class="buy_filter">
-            1
-        </div>
-        <div class="buy_filter">
-            1
-        </div>
-        <div class="buy_filter">
-            1
-        </div>
-        <div class="buy_filter">
-            1
-        </div>
-    </div>
+    </div> --}}
+
     <div class="buy_homes_cards">
         @if(!empty($houses))
                 @foreach ($houses as $house)
@@ -54,107 +239,10 @@
                 </div>
             @endif
     </div>
-
-    <div class="check_test">
-        <div class="buy_homes_check_section">
-            <h5 class="buy_homes_check_section_header">Beds</h5>
-            {{-- <label>
-                <input type="checkbox" value="one" wire:model="bedsSelectedValue"/>
-                One
-            </label>
-            <label>
-                <input type="checkbox" value="two" wire:model="bedsSelectedValue"/>
-                Two
-            </label>
-            <label>
-                <input type="checkbox" value="three" wire:model="bedsSelectedValue"/>
-                Three
-            </label>
-            <label>
-                <input type="checkbox" value="four" wire:model="bedsSelectedValue"/>
-                Four
-            </label>
-            <label>
-                <input type="checkbox" value="five" wire:model="bedsSelectedValue"/>
-                Five
-            </label> --}}
-
-            <input type="checkbox" value="one" wire:model="bedsSelectedValue"/> One
-            <input type="checkbox" value="two" wire:model="bedsSelectedValue"/> Two
-            <input type="checkbox" value="three" wire:model="bedsSelectedValue"/> Three
-            <input type="checkbox" value="four" wire:model="bedsSelectedValue"/> Four
-            <input type="checkbox" value="five" wire:model="bedsSelectedValue"/> Five
-
-            @foreach ($bedsSelectedValue as $value)
-                <p>{{$value}}</p>
-            @endforeach
-            {{-- <div class="form-check">
-                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="1" id="bedsCheckOne">
-                <label class="form-check-label" for="bedsCheckOne">
-                    1
-                </label>
-              </div>
-              <div class="form-check">
-                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="2" id="bedsCheckTwo">
-                <label class="form-check-label" for="bedsCheckTwo">
-                    2
-                </label>
-              </div>
-              <div class="form-check">
-                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="3" id="bedsCheckThree">
-                <label class="form-check-label" for="bedsCheckThree">
-                    3
-                </label>
-              </div>
-              <div class="form-check">
-                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="4" id="bedsCheckFour">
-                <label class="form-check-label" for="bedsCheckFour">
-                    4
-                </label>
-              </div>
-              <div class="form-check">
-                <input wire:model="bedsCheck" class="form-check-input" type="checkbox" value="5" id="bedsCheckFive">
-                <label class="form-check-label" for="bedsCheckFive">
-                    5
-                </label>
-              </div> --}}
-        </div>
-
-        {{-- checks: {{var_export($bedsCheck)}} --}}
-
-
-        {{-- <div class="buy_homes_radio_section">
-            <h5 class="buy_homes_radio_section_header">Beds</h5>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                    1
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                    2
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                    3
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                    4
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                    5
-                </label>
-              </div>
-        </div> --}}
-    </div>
 </div>
+
+                {{-- <input wire:model="bedsSelectedValue" type="checkbox" value="one"/> One
+                <input wire:model="bedsSelectedValue" type="checkbox" value="two"/> Two
+                <input wire:model="bedsSelectedValue" type="checkbox" value="three"/> Three
+                <input wire:model="bedsSelectedValue" type="checkbox" value="four"/> Four
+                <input wire:model="bedsSelectedValue" type="checkbox" value="five"/> Five --}}
