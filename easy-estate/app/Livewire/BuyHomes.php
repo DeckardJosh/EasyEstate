@@ -10,6 +10,11 @@ class BuyHomes extends Component
 {
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
+
+    public $bedsSelectedValue = [];
+    public $bathsSelectedValue = [];
+    public $storiesSelectedValue = [];
+    public $utilitiesSelectedValue = [];
     public function render()
     {
         $houses = House::where('for_purchase', 1)->paginate(12);
