@@ -1,19 +1,35 @@
 .about_hero_wrapper {
     margin-top: 80px;
-    height: 400px;
+    height: 600px;
+    /* background-color: #efefef; */
     background: url('../images/street.jpg') rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     background-position: bottom;
 
 }
 
-.about_hero_header_content{
+.about_hero_content_wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: inherit;
+}
+
+.about_hero_header_content{
+    font-family: var(--font-header);
+    font-weight: bold;
     text-align: center;
     color: white;
     font-size: 3rem;
+}
+
+.about_hero_content {
+    font-family: var(--font-body);
+    text-align: center;
+    width: 40%;
+    font-size: 1.5rem;
+    color: white;
+
 }
 

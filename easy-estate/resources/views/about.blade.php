@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/about-hero.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/about-section.css') }}" />
 
     
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}" />
@@ -28,6 +29,11 @@
         <livewire:about-hero/>
         {{-- end about-hero comp --}}
     </section>
+    <article>
+        {{-- about section comp --}}
+        <livewire:about-section/>
+        {{-- end about section comp --}}
+    </article>
     <footer>
         {{-- Footer Component --}}
         <livewire:footer/>
