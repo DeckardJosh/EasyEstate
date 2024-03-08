@@ -1,5 +1,19 @@
 .about_hero_wrapper {
     margin-top: 80px;
-    height: 1000px;
-    background-color: grey;
+    height: 400px;
+    background: url('../images/street.jpg') rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: bottom;
+
 }
+
+.about_hero_header_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+

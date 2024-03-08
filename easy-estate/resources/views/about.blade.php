@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/about-hero.css') }}" />
 
+    
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}" />
 
 
