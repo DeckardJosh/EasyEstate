@@ -57,3 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+function popupDisabled(){
+alert("This feature is currently disabled.");
+}
