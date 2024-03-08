@@ -1,0 +1,40 @@
+.about_company_wrapper {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    flex-wrap: wrap;
+}
+
+.about_company_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_company_content_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.about_company_header {
+    font-family: var(--font-header);
+    font-size: 3rem;
+}
+
+.about_company_content {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+}
+
+.about_company_image {
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px;
+    color: var(--color-seagreen);
+}

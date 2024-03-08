@@ -197,9 +197,9 @@
                     </a>
                 </div>
                 @endforeach
-                <div class="rent_homes_cards_pagination">
-                    {{$houses->links() }}
-                </div>
             @endif
+    </div>
+    <div class="rent_homes_cards_pagination mb-4">
+        {{$houses->links() }}
     </div>
 </div>

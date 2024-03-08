@@ -1,0 +1,128 @@
+.about_section_wrapper {
+    background-color: #efefef;
+    height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap-reverse;
+    /* justify-content: space-around; */
+}
+
+.about_section_column_content_wrapper {
+    width: 550px;
+    /* background-color: grey; */
+}
+
+.about_section_column_cards {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about_section_column_review {
+    /* margin: 0px 0px 40px 0px; */
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--color-seagreen);
+}
+
+.about_section_column_header {
+    font-family: var(--font-header);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about_section_column_content {
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    color: var(--font-color-mute-grey);
+}
+
+.about_section_card_column_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.about_section_card_column_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_section_left_card{
+    width: 240px;
+    height: 300px;
+    background-color: #00ADBB;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.about_section_top_card {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: #C2D500;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.about_section_bottom_card {
+    width: 300px;
+    height: 300px;
+    background-color: #FA8C68;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.about_section_card_header, .about_section_card_resident, .about_section_card_quote {
+    color: white;
+    font-family: var(--font-body);
+}
+
+.about_section_card_header {
+    font-family: var(--font-header);
+    font-size: 1rem;
+}
+
+.about_section_card_resident {
+    font-size: .80rem;
+}
+
+.about_section_card_quote {
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+.about_section_card_cust{
+    margin-top: 30px;
+}
+
+.about_section_card_percent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.about_section_card_percent_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding-bottom: 2px;
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    font-size: .75rem;
+    color: black;
+    border-radius: 5px;
+}
+
+.about_section_card_percent_content {
+    margin: 0;
+}

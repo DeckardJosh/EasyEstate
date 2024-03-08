@@ -27,4 +27,8 @@ Route::get('/rent', function(){
     return view('rent');
 });
 
+Route::get('about', function(){
+    return view('about');
+});
+
 Route::resource('houses', HouseController::class);

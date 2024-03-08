@@ -1,3 +1,8 @@
+<?php
+ function () { alert("Welcome"); } 
+
+?> 
+
 <div>
     <nav class="nav_wrapper">
         <div class="nav_left_selection">
@@ -14,14 +19,14 @@
                     Rent
                 </div>
             </a>
-            <a href="/mortgage" class="nav_link_item">
+            <a href="/about" class="nav_link_item">
                 <div class="nav_item">
-                    Mortgage
+                    About
                 </div>
             </a>
         </div>
         <div class="nav_right_selection">
-            <a href="#" class="nav_link_item">
+            {{-- <a href="#" class="nav_link_item">
                 <div class="nav_item">
                     Saved Homes
                 </div>
@@ -30,8 +35,8 @@
                 <div class="nav_item">
                     Saved Searches
                 </div>
-            </a>
-            <a href="#" class="nav_link_item">
+            </a> --}}
+            <a= onclick="popupDisabled()" href="#" class="nav_link_item">
                 <div class="nav_item nav_login">
                     Sign up or Log in
                 </div>
