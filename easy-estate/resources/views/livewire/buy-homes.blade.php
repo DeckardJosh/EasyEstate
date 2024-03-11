@@ -183,7 +183,7 @@
                 
                 <div class="buy_home_single_card">
                     {{-- href="{{ route('house', $house->id) }}" --}}
-                    <a class="buy_home_link_wrapper" href="#">
+                    <a class="buy_home_link_wrapper" href="/">
                         <div class="buy_home_card_image">
                             <img src="https://picsum.photos/id/{{$loremId}}/600/400" class="card-img-top" alt="LoremPicsum placeholder photo for house">
                         </div>

@@ -7,17 +7,15 @@ use \App\Models\House;
 
 class HousePreview extends Component
 {
-//     public function mount($uuid)
-// {
-//     $customer = Customer::where('uuid', $uuid)->first();
-//         $this->name  = $customer->name;
-//         $this->age   = $customer->age;
-//         $this->dob   = $customer->dob;
-// }
-    public function render($id)
+    // public $house;
+
+    // public function mount($id)
+    // {
+    //     // Fetch the house details using the provided ID
+    //     $this->house = House::find($id);
+    // }
+    public function render()
     {
-        // $houses = House::find($id)->get();
-        // , ['houses' => $houses]
         return view('livewire.house-preview');
     }
 }
