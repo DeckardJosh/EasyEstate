@@ -1,11 +1,4 @@
 <div class="house_preview_wrapper">
-    {{-- @if(!empty($houses))
-        @foreach ($houses as $house)
-            {{$house->id}}
-        @endforeach
-    @endif --}}
-    {{-- <h1>{{ $house->title }}</h1> --}}
-
     <div class="house_image_wrapper">
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner carousel_wrapper">
@@ -33,13 +26,13 @@
     <div class="main_house_content_full">
         <div class="main_house_content">
             <div class="main_house_content_left">
-                <h1 class="main_house_content_header">1111 East 11th Ave.</h1>
-                <h4 class="main_house_content_subheader">Seattle Wa</h4>
+                <h1 class="main_house_content_header">{{$house->street_address}}</h1>
+                <h4 class="main_house_content_subheader">{{$house->street_city}}, {{$house->street_state}}</h4>
                 <p class="main_house_content_owner">by Easy Estate</p>
-                <i class="fa fa-solid fa-bed fa-xs"></i> 2 bed <i class="fa fa-solid fa-bath fa-xs"></i> 2 bath, <i class="fa fa-solid fa-caret-up"></i> 1100 sqft</p>
+                <i class="fa fa-solid fa-bed fa-xs"></i> {{$house->bed}} bed <i class="fa fa-solid fa-bath fa-xs"></i> {{$house->bath}} bath, <i class="fa fa-solid fa-caret-up"></i> {{$house->sqft}} sqft</p>
             </div>
             <div class="main_house_content_right">
-                <h3 class="main_house_content_price">99.999+</h3>
+                <h3 class="main_house_content_price">{{$house->price}}+</h3>
             </div>
             <div class="main_house_content_description">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid aut eaque eligendi sit! Incidunt culpa accusantium labore ipsam reprehenderit? Facilis ab fugiat delectus quaerat minima eveniet excepturi vel laudantium quasi?</p>
@@ -53,7 +46,7 @@
                   </div>
                   <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control contact_textarea" id="exampleFormControlTextarea1" rows="3">I am interested in 1111 East 11th Ave.</textarea>
+                    <textarea class="form-control contact_textarea" id="exampleFormControlTextarea1" rows="3">I am interested in {{$house->street_address}}.</textarea>
                   </div>
                 <button class="btn btn-primary">Request Information</button>
             </form>
@@ -65,21 +58,26 @@
         <div class="home_highlights">
             <div class="home_highlights_column">
                 <div class="home_highlights_row">
-                    <span>Parking:</span>&nbsp;<span>Garage</span>
+                    {{-- NEED TO FORMAT THIS --}}
+                    <span>Parking:</span>&nbsp;<span>{{$house->garage}}</span>
                 </div>
                 <div class="home_highlights_row">
-                    <span>Outdoor:</span>&nbsp;<span>No Info</span>
+                    {{-- NEED TO CHANGE THIS --}}
+                    <span>Outdoor:</span>&nbsp;<span>No Info.</span>
                 </div>
                 <div class="home_highlights_row">
-                    <span>A/C:</span>&nbsp;<span>Heat & Cooling</span>
+                    {{-- NEED TO FORMAT THIS --}}
+                    <span>A/C:</span>&nbsp;<span>{{$house->heat_cooling}}</span>
                 </div>
             </div>
             <div class="home_highlights_column">
                 <div class="home_highlights_row">
-                    <span>HOA:</span>&nbsp;<span>None</span>
+                    {{-- NEED TO CHANGE THIS --}}
+                    <span>HOA:</span>&nbsp;<span>None.</span>
                 </div>
                 <div class="home_highlights_row">
-                    <span>Listed:</span>&nbsp;<span>10 days ago</span>
+                    {{-- NEED TO FORMAT THIS --}}
+                    <span>Listed:</span>&nbsp;<span>{{$house->created_at}}</span>
                 </div>
             </div>
         </div>
