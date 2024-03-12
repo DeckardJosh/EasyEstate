@@ -15,8 +15,8 @@
                     $loremId = rand(1, 100)
                 ?>
                     <div class="card recent_houses_card" style="width: 16rem;">
-                        <a class="card_link_wrapper" href="#">
-                            <img src="https://picsum.photos/id/{{$loremId}}/150/100" class="card-img-top" alt="LoremPicsum placeholder photo for house">
+                        <a class="card_link_wrapper" href="/house?id={{$house->id}}">
+                            <img src="https://picsum.photos/id/{{$loremId}}/150/100" class="card-img-top" alt="LoremPicsum placeholder photo for house" onerror="this.src='/images/house-4.jpg';this.onerror=null;">
                             <div class="card-body">
                                 <h5 class="card-title recent_house_card_header">${{number_format($house->price)}}</h5>
                                 <p class="card-text recent_house_body">{{$house->bed}} bed {{$house->bath}} bath, {{$house->sqft}} sqft,<br>{{$house->street_address}}<br> {{$house->street_city}}, {{$house->street_state}}</p>

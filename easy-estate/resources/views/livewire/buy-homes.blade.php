@@ -183,9 +183,9 @@
                 
                 <div class="buy_home_single_card">
                     {{-- href="{{ route('house', $house->id) }}" --}}
-                    <a class="buy_home_link_wrapper" href="/">
+                    <a class="buy_home_link_wrapper" href="/house?id={{$house->id}}">
                         <div class="buy_home_card_image">
-                            <img src="https://picsum.photos/id/{{$loremId}}/600/400" class="card-img-top" alt="LoremPicsum placeholder photo for house">
+                            <img src="https://picsum.photos/id/{{$loremId}}/600/400" class="card-img-top" alt="LoremPicsum placeholder photo for house" onerror="this.src='/images/house-4.jpg';this.onerror=null;">
                         </div>
                         <div class="buy_home_card_data">
                             <h5 class="buy_home_card_price">${{number_format($house->price)}}</h5>

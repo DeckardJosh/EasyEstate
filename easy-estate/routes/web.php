@@ -27,11 +27,11 @@ Route::get('/rent', function(){
     return view('rent');
 });
 
-Route::get('about', function(){
+Route::get('/about', function(){
     return view('about');
 });
 
-Route::get('house', function(){
+Route::get('/house', function(){
     return view('house');
 });
 
