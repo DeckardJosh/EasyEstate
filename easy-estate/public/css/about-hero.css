@@ -33,3 +33,14 @@
 
 }
 
+@media screen and (max-width: 1300px){
+    .about_hero_content{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .about_hero_content{
+        width: 70%;
+    }
+}
