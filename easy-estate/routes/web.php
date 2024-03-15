@@ -35,4 +35,8 @@ Route::get('/house', function(){
     return view('house');
 });
 
+Route::get('/test', function(){
+    return view('test');
+});
+
 Route::resource('houses', HouseController::class);

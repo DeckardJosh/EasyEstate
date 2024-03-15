@@ -116,3 +116,53 @@
     width: 100%;
     color: black;
 }
+
+@media screen and (max-width: 1831px){
+    .buy_home_card_image{
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1530px){
+    .buy_home_card_image{
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1229px){
+    .buy_home_card_image{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 925px){
+    .buy_home_card_image{
+        height: 150px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 825px){
+    .buy_homes_search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+    /* filter adjustment here */
+    .drop_within{
+        display: none;
+    }
+
+    .buy_dropdowns{
+        flex-wrap: wrap;
+    }
+
+    .buy_homes_list_count{
+        text-align: center;
+        margin-right: 0;
+    }
+}

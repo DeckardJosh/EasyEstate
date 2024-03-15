@@ -52,10 +52,10 @@
     flex-direction: column;
 }
 
-.about_section_left_card{
+.about_section_left_card {
     width: 240px;
     height: 300px;
-    background-color: #00ADBB;
+    background-color: #00adbb;
     border-radius: 15px;
     padding: 20px;
 }
@@ -64,7 +64,7 @@
     width: 350px;
     height: 200px;
     margin-bottom: 30px;
-    background-color: #C2D500;
+    background-color: #c2d500;
     border-radius: 15px;
     padding: 20px;
 }
@@ -72,12 +72,14 @@
 .about_section_bottom_card {
     width: 300px;
     height: 300px;
-    background-color: #FA8C68;
+    background-color: #fa8c68;
     border-radius: 15px;
     padding: 20px;
 }
 
-.about_section_card_header, .about_section_card_resident, .about_section_card_quote {
+.about_section_card_header,
+.about_section_card_resident,
+.about_section_card_quote {
     color: white;
     font-family: var(--font-body);
 }
@@ -88,7 +90,7 @@
 }
 
 .about_section_card_resident {
-    font-size: .80rem;
+    font-size: 0.8rem;
 }
 
 .about_section_card_quote {
@@ -96,7 +98,7 @@
     font-size: 1.5rem;
 }
 
-.about_section_card_cust{
+.about_section_card_cust {
     margin-top: 30px;
 }
 
@@ -118,11 +120,90 @@
     width: 50px;
     height: 20px;
     background-color: white;
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: black;
     border-radius: 5px;
 }
 
 .about_section_card_percent_content {
     margin: 0;
+}
+
+@media screen and (max-width: 1209px) {
+    .about_section_wrapper {
+        height: auto;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .about_section_column_content_wrapper{
+        width: 500px;
+    }
+    .about_section_column_content{
+        font-size: 1.25rem;
+    }
+
+    .about_section_column_cards{
+        justify-content: center;
+    }
+
+    .about_section_left_card{
+        width: 190px;
+        height: 240px;
+    }
+
+    .about_section_top_card{
+        width: 270px;
+        height: 150px;
+    }
+
+    .about_section_bottom_card{
+        width: 270px;
+        height: 200px;
+    }
+
+    .about_section_card_header {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    .about_section_card_resident {
+        font-size: 0.8rem;
+    }
+    
+    .about_section_card_quote {
+        padding-top: 10px;
+        font-size: 1rem;
+    }
+    
+    .about_section_card_cust{
+        margin-top: 5px;
+    }
+    
+    .about_section_card_percent{
+        font-size: .85rem;
+    }
+
+    .about_section_card_percent_box{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .about_section_column_cards{
+        flex-wrap: wrap;
+    }
+
+    .about_section_wrapper {
+        height: auto;
+        padding: 20px;
+    }
+
+    .about_section_left_card{
+        margin-left: 30px;
+        margin-bottom: 30px;
+        width: 270px;
+        height: 200px;
+    }
 }

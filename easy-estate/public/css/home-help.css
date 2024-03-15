@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
 }
 
 .help_item {
@@ -59,4 +61,21 @@
     margin-top: 75px;
     margin-bottom: 75px;
     width: 25%;
+}
+
+@media screen and (max-width: 900px) {
+    .help_container {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .help_header {
+
+        margin-bottom: 10px;
+    }
+
+    .help_search {
+        display: none;
+    }
 }

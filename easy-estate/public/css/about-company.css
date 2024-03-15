@@ -38,3 +38,33 @@
     box-shadow: 5px 10px 18px;
     color: var(--color-seagreen);
 }
+
+@media screen and (max-width: 1060px){
+    .about_company_wrapper{
+        gap: 20px;
+        padding: 40px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .about_company_content_wrapper{
+        width: 100%;
+    }
+
+    .about_company_header{
+        font-size: 2rem;
+    }
+    
+    .about_company_content{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .about_company_image{
+        height: 360px;
+        width: 270px;
+        border-radius: 10px;
+    }
+}

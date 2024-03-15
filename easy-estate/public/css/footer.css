@@ -3,10 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
 }
 
 .footer_copy {
     width: 800px;
+/* this is the part that is fucking it up^ */
 }
 
 .footer_copy_one {
@@ -20,4 +23,29 @@
 .footer_image_one {
     transform: rotateY(180deg);
     /* transform: translateY(10px); */
+}
+
+@media screen and (max-width: 1016px){
+    .footer_image_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .footer_copy {
+        margin-top: 10px;
+        padding: 0px 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer_copy {
+        margin-top: 20px;
+        width: 100%;
+    }
 }

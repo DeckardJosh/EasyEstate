@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .btn-secondary {
@@ -63,4 +64,33 @@
 .hero_buttons:hover > .btn-secondary {
     background: var(--font-color-mute-grey);
     color: white;
+}
+
+
+@media screen and (max-width: 900px){
+    .hero_wrapper {
+        width: 100%;
+        margin: 80px 10px 10px 0px;
+        height: 500px;
+        background-size: cover;
+        overflow: none;
+    }
+
+    .btn-secondary {
+        background: var(--color-seagreen);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .hero_header {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero_search {
+        display: none;
+    }
 }

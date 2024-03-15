@@ -7,10 +7,15 @@
     --color-seagreen: #20b2aa
 }
 
-
-body {
+html, body {
     font-family: var(--font-body);
-    margin: 0px;
-    padding: 0px;
-
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} */

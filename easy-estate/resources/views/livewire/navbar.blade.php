@@ -36,10 +36,13 @@
                     Saved Searches
                 </div>
             </a> --}}
-            <a= onclick="popupDisabled()" href="#" class="nav_link_item">
+            <a onclick="popupDisabled()" href="#" class="nav_link_item">
                 <div class="nav_item nav_login">
                     Sign up or Log in
                 </div>
+            </a>
+            <a onclick="popupDisabled()" href="#" class="nav_link_item">
+                <div class="navHam"><i class="fa fa-solid fa-bars"></i></div>
             </a>
         </div>
     </nav>
