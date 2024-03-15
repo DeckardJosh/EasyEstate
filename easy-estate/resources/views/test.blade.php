@@ -30,6 +30,23 @@
         {{-- End Explore Homes Article --}}
     </section>
 
+    <section>
+        {{-- Live House Data Component --}}
+        <livewire:article-house-data/>
+        {{-- End Live House Data Component --}}
+    </section>
+
+    <section>
+        {{-- How can we help Component --}}
+        <livewire:home-help/>
+        {{-- End how can we help Component --}}
+    </section>
+
+    <footer>
+        {{-- Footer Component --}}
+        <livewire:footer/>
+        {{-- End Footer Component --}}
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="{{ asset('js/index.js') }}"></script>
