@@ -162,3 +162,39 @@
     background-color: black;
     opacity: .8;
 }
+
+@media screen and (max-width: 1832px) {
+    .explore_cards {
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .explore_header_content, .explore_article_header{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .explore_article_body, .explore_article_disclaimer {
+        width: 400px;
+    }
+    .card_single {
+        width: 250px;
+    }
+
+    .card_double_item {
+        width: 250px !important;
+    }
+
+    .double_user_review {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .explore_article_body, .explore_article_disclaimer {
+        width: 300px;
+    }
+}
