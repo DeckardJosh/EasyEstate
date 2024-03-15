@@ -72,3 +72,13 @@
     background-color: lightgrey;
     color: var(--font-color-mute-grey);
 }
+
+@media screen and (max-width: 900px){
+    .nav_wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+}
