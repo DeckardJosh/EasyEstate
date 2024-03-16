@@ -5,12 +5,15 @@ namespace App\Livewire;
 use Livewire\Component;
 use \App\Models\House;
 use Livewire\WithPagination;
+use Illuminate\Support\Facades\Route;
 
 class RentHomes extends Component
 {
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
 
+    public $search = '';
+    public $search_value = '';
     public $bedsSelectedValue = 'any';
     public $bathsSelectedValue = 'any';
     public $storiesSelectedValue = 'any';
@@ -21,10 +24,15 @@ class RentHomes extends Component
         $this->bathsSelectedValue = 'any';
         $this->storiesSelectedValue = 'any';
         $this->utilitiesSelectedValue = [];
+        $this->search = '';
     }
 
     public function render(){
         $query = House::where('for_purchase', 0);
+
+        if($this->search !== ''){
+            $query->where('street_city', 'like', '%' .$this->search . '%');
+        }
 
         if ($this->bedsSelectedValue !== 'any') {
             $query->where('bed', $this->bedsSelectedValue);

@@ -9,7 +9,8 @@
             <img src="/images/hero-family.jpg" class="card_image card_overlay_custom" alt="...">
             <div class="single_content">
                 <h3 class="single_header">Seattle, WA</h3>
-                <button type="button" class="btn btn-light single_button">View Homes</button>
+                {{-- <button type="button" class="btn btn-light single_button">View Homes</button> --}}
+                <a href="/search?search=seattle" class="btn btn-light double_button" role="button">View Homes</a>
             </div>
         </div>
         <div class="card_double">
@@ -26,7 +27,8 @@
                 <img src="/images/house-1.jpg" class="card_image card_overlay_custom" alt="...">
                 <div class="double_content">
                     <h3 class="double_header">Olympia, WA</h3>
-                    <button type="button" class="btn btn-light double_button">View Homes</button>
+                    {{-- <button type="button" class="btn btn-light double_button">View Homes</button> --}}
+                    <a href="/search?search=olympia" class="btn btn-light double_button" role="button">View Homes</a>
                 </div>
             </div>
         </div>
@@ -35,14 +37,16 @@
                 <img src="/images/house-2.jpg" class="card_image card_overlay_custom" alt="...">
                 <div class="double_content">
                     <h3 class="double_header">Tacoma, WA</h3>
-                    <button type="button" class="btn btn-light double_button">View Homes</button>
+                    {{-- <button type="button" class="btn btn-light double_button">View Homes</button> --}}
+                    <a href="/search?search=tacoma" class="btn btn-light double_button" role="button">View Homes</a>
                 </div>
             </div>
             <div class="card_double_item">
                 <img src="/images/house-6.jpg" class="card_image card_overlay_custom" alt="...">
                 <div class="double_content">
                     <h3 class="double_header">Kennewick, WA</h3>
-                    <button type="button" class="btn btn-light double_button">View Homes</button>
+                    {{-- <button type="button" class="btn btn-light double_button">View Homes</button> --}}
+                    <a href="/search?search=kennewick" class="btn btn-light double_button" role="button">View Homes</a>
                 </div>
             </div>
         </div>
@@ -50,7 +54,8 @@
             <img src="/images/house-5.jpg" class="card_image card_overlay_custom" alt="...">
             <div class="single_content">
                 <h3 class="single_header">Spokane, WA</h3>
-                <button type="button" class="btn btn-light single_button">View Homes</button>
+                {{-- <button type="button" class="btn btn-light single_button">View Homes</button> --}}
+                <a href="/search?search=spokane" class="btn btn-light double_button" role="button">View Homes</a>
             </div>
         </div>
         <div class="card_double card_double_user_reveiw">
@@ -58,7 +63,8 @@
                 <img src="/images/house-7.jpg" class="card_image card_overlay_custom" alt="...">
                 <div class="double_content">
                     <h3 class="double_header">Vancouver, WA</h3>
-                    <button type="button" class="btn btn-light double_button">View Homes</button>
+                    {{-- <button type="button" class="btn btn-light double_button">View Homes</button> --}}
+                    <a href="/search?search=vancouver" class="btn btn-light double_button" role="button">View Homes</a>
                 </div>
             </div>
             <div class="card_double_item">
@@ -76,14 +82,16 @@
                 <img src="/images/house-4.jpg" class="card_image card_overlay_custom" alt="...">
                 <div class="double_content">
                     <h3 class="double_header">Yakima, WA</h3>
-                    <button type="button" class="btn btn-light double_button">View Homes</button>
+                    {{-- <button type="button" class="btn btn-light double_button">View Homes</button> --}}
+                    <a href="/search?search=yakima" class="btn btn-light double_button" role="button">View Homes</a>
                 </div>
             </div>
             <div class="card_double_item">
                 <img src="/images/house-3.jpg" class="card_image card_overlay_custom" alt="...">
                 <div class="double_content">
                     <h3 class="double_header">Kent, WA</h3>
-                    <button type="button" class="btn btn-light double_button">View Homes</button>
+                    {{-- <button type="button" class="btn btn-light double_button">View Homes</button> --}}
+                    <a href="/search?search=kent" class="btn btn-light double_button" role="button">View Homes</a>
                 </div>
             </div>
         </div>

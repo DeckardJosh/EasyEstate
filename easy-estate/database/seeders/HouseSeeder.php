@@ -46,7 +46,7 @@ class HouseSeeder extends Seeder
         }
 
         //add new seeded values
-        foreach(range(1,200) as $number){
+        foreach(range(1,800) as $number){
 
             \App\Models\House::create([
                 'street_address' => randHouseNumbers(),

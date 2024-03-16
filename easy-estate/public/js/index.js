@@ -61,3 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function popupDisabled(){
 alert("This feature is currently disabled.");
 }
+document.addEventListener('livewire:load', function () {
+    Livewire.on('redirect-to-search', ({ search }) => {
+        window.location.href = '/search?search=' + encodeURIComponent(search);
+    });
+});
