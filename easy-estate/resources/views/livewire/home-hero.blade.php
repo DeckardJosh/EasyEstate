@@ -10,10 +10,12 @@
             <a href="/rent" type="button" class="btn-secondary">Rent</a>
         </div>
         <div class="hero_search">
-            <div class="input-group mt-3">
-                <input type="text" class="form-control" placeholder="Seattle, WA">
-                <a href="#" type="button" class="input-group-text btn btn-danger" id="hero_search">Search</a>
-            </div>
+            <form>
+                <div class="input-group mt-2">
+                    <input type="text" id="search" name="search" class="form-control" placeholder="Search by City" aria-label="Search" aria-describedby="search" wire:model.live="search" wire:keydown.enter.prevent="$refresh">
+                    <a href="/search?search={{$search}}" class="btn btn-danger" role="button">Search</a>
+                </div>
+            </form>
         </div>
     </div>
 </div>

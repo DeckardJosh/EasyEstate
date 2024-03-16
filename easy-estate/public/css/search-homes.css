@@ -1,0 +1,164 @@
+.search_homes_wrapper {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_homes_search {
+    width: 500px;
+}
+
+.search_homes_filters {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.search_homes_cards {
+    flex-wrap: wrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.search_home_link_wrapper {
+    text-decoration: none;
+    color: black;
+}
+
+.search_home_single_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.search_home_single_card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .search_home_card_data{
+        background-color: #efefef;
+    }
+}
+
+.search_home_card_image {
+    /* background-color: black; */
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.search_home_card_image img:hover{
+    border-radius: 15px;
+    transform: scale(1.15);
+    transition-duration: .5s;
+    overflow: hidden;
+}
+
+.search_home_card_image img {
+    border-radius: 15px;
+}
+
+.search_home_card_data {
+    /* background-color: grey; */
+    padding: 10px 20px 10px 20px;
+    line-height: 15px;
+    height: 125px;
+}
+
+.search_home_card_data p{
+    margin-bottom: 3px;
+}
+
+.search_homes_cards_pagination {
+    margin-top: 40px;
+    height: 50px;
+    overflow: none;
+}
+
+.search_filters{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #efefef;
+}
+
+.search_dropdowns {
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.search_homes_search {
+    padding: 10px 30px 20px 10px;
+}
+
+.dropdown_menu_item {
+    padding: 5px 5px 5px 5px;
+}
+
+.search_homes_list_count {
+    margin-right: 30px;
+    text-align: right;
+    width: 100%;
+    color: black;
+}
+
+
+@media screen and (max-width: 1831px){
+    .search_home_card_image{
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1530px){
+    .search_home_card_image{
+        height: 250px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1229px){
+    .search_home_card_image{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 925px){
+    .search_home_card_image{
+        height: 150px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 825px){
+    .search_homes_search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .search_dropdowns{
+        flex-wrap: wrap;
+    }
+
+    .search_homes_list_count{
+        text-align: center;
+        margin-right: 0;
+    }
+}

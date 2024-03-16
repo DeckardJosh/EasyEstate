@@ -155,21 +155,13 @@
             <button wire:click.live="filterClear" class="btn btn-danger filter_clear">Clear</button>
         </div>
         <div class="buy_homes_search">
-            <form method="POST" action="#">
+            <form>
                 <div class="input-group mt-2">
-                    <input type="text" class="form-control" placeholder="Search by State or City" aria-label="Search" aria-describedby="search">
-                    <button type="button" class="btn btn-danger">
-                        Search
-                    </button>
+                    <input type="text" id="search" name="search" class="form-control" placeholder="Search by City" aria-label="Search" aria-describedby="search" wire:model.live="search" wire:keydown.enter.prevent="$refresh">
+                    <a href="/search?search={{$search}}" class="btn btn-danger" role="button">Search</a>
                 </div>
             </form>
         </div>
-        {{-- <div class="test_value">
-            Beds: {{($bedsSelectedValue)}}
-            Baths: {{($bathsSelectedValue)}}
-            Stories: {{($storiesSelectedValue)}}
-            Utilities: {{var_export($utilitiesSelectedValue)}}
-        </div> --}}
     </div>
     <div class="buy_homes_list_count">
         <p>Total houses: {{$totalHousesCount}}</p>
