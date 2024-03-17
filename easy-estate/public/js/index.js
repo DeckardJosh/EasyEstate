@@ -1,46 +1,17 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     var scrollRightBtn = document.getElementById("scrollRightButton");
-//     var scrollLeftBtn = document.getElementById("scrollLeftButton")
-//     var scrollableContainer = document.getElementById(
-//         "recent_houses_container_id"
-//     );
-
-//     if (scrollRightBtn && scrollLeftBtn && scrollableContainer) {
-//         function scrollContainer(scrollableContainer, direction, amount) {
-//             var container = document.getElementById(scrollableContainer);
-//             var newScrollLeft;
-//             if (direction === 'left') {
-//                 newScrollLeft = container.scrollLeft - amount;
-//             } else {
-//                 newScrollLeft = container.scrollLeft + amount;
-//             }
-//             container.scrollLeft = newScrollLeft;
-//         }
-//     };
-// });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const buttonRight = document.getElementById("slideRight");
-    const buttonLeft = document.getElementById("slideLeft");
+    if (window.location.pathname === '/') {
+        const buttonRight = document.getElementById("slideRight");
+        const buttonLeft = document.getElementById("slideLeft");
 
-    buttonRight.onclick = function () {
-        document.getElementById("recent_houses_container_id").scrollLeft += 400;
-    };
-    buttonLeft.onclick = function () {
-        document.getElementById("recent_houses_container_id").scrollLeft -= 400;
-    };
+        buttonRight.onclick = function () {
+            document.getElementById("recent_houses_container_id").scrollLeft += 400;
+        };
+        buttonLeft.onclick = function () {
+            document.getElementById("recent_houses_container_id").scrollLeft -= 400;
+        };
+    }
 });
-
-// (function () {
-//     var current = location.pathname.split('/')[1];
-//     if (current === "") return;
-//     var menuItems = document.querySelectorAll('.menu-item a');
-//     for (var i = 0, len = menuItems.length; i < len; i++) {
-//         if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
-//             menuItems[i].className += "is-active";
-//         }
-//     }
-// })();
 
 document.addEventListener('DOMContentLoaded', function() {
     var currentUrl = window.location.pathname; // Get the current URL path

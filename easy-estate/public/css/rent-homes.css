@@ -117,6 +117,14 @@
     color: black;
 }
 
+.no_house_error {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    padding: 20px;
+    text-align: center;
+    background-color: #efefef;
+    border-radius: 15px;
+}
 
 @media screen and (max-width: 1831px){
     .rent_home_card_image{

@@ -44,16 +44,6 @@
                         <input wire:model.live="bedsSelectedValue" type="radio" value="3" /> Three
                     </label>
                   </li>
-                  <li class="dropdown_menu_item">
-                    <label>
-                        <input wire:model.live="bedsSelectedValue" type="radio" value="4" /> Four
-                    </label>
-                  </li>
-                  <li class="dropdown_menu_item">
-                    <label>
-                        <input wire:model.live="bedsSelectedValue" type="radio" value="5" /> Five
-                    </label>
-                  </li>
                 </ul>
             </div>
             <div class="dropdown dropdown_baths">
@@ -190,6 +180,12 @@
                     </a>
                 </div>
                 @endforeach
+            @endif
+            @if(count($houses) < 1)
+                <div class="no_house_error">
+                    <h1>Were Sorry!</h1>
+                    <p>We dont have any houses that match your search results. Please try again later, or update your filter preferences.</p>
+                </div>
             @endif
     </div>
     <div class="buy_homes_cards_pagination mb-4">
