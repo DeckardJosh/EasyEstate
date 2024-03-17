@@ -11,7 +11,7 @@
 <p>I used PHP, Laravel, Livewire, MySQL, and some JS and CSS.</p>
 <p>I also leveraged Bootstrap to speed up the process for a portion of the design.</p>
 
-<h3>About This Project</h3>
+<h2>About This Project</h2>
 <p>This project was designed, and based off of https://www.trulia.com/ where I tried to borrow proven design concepts, such as their hero, horozontal scroll, and card styles. I did not replicate the design completely as I wanted to take some liberties with what to add.</p>
 
 <p><strong>Pages:</strong></p>
@@ -38,6 +38,6 @@
 <p><strong>Individual House:</strong></p>
 <p>This page showcases the individual house record and all of its data. Including the beds, baths, ac, garage and more.</p>
 
-<h4>My Thoughts</h4>
+<h2>My Thoughts</h2>
 <p>I had a blast on this project, as it had been a bit since I have worked with Laravel, or PHP. It was both challenging, and rewarding, and I look forward to updating the features, and design in the future. Feel free to reach out to me if you have any suggestions!</p>
 
