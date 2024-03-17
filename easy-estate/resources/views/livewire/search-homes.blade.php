@@ -15,6 +15,7 @@
     <div class="search_homes_list_count">
         <p>Total houses: {{$totalHousesCount}}</p>
     </div>
+    <div class="search_info_addon">Search results shown are both rent and buy:</div>
     <div class="search_homes_cards">
         @if(!empty($houses))
                 @foreach ($houses as $house)
@@ -38,6 +39,12 @@
                     </a>
                 </div>
                 @endforeach
+            @endif
+            @if(count($houses) < 1)
+                <div class="no_house_error">
+                    <h1>Were Sorry!</h1>
+                    <p>We dont have any houses that match your search results. Please try again later, or update your filter preferences.</p>
+                </div>
             @endif
     </div>
     <div class="search_homes_cards_pagination mb-4">

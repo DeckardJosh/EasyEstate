@@ -44,16 +44,6 @@
                         <input wire:model.live="bedsSelectedValue" type="radio" value="3" /> Three
                     </label>
                   </li>
-                  <li class="dropdown_menu_item">
-                    <label>
-                        <input wire:model.live="bedsSelectedValue" type="radio" value="4" /> Four
-                    </label>
-                  </li>
-                  <li class="dropdown_menu_item">
-                    <label>
-                        <input wire:model.live="bedsSelectedValue" type="radio" value="5" /> Five
-                    </label>
-                  </li>
                 </ul>
             </div>
             <div class="dropdown dropdown_baths">
@@ -179,7 +169,10 @@
                             <img src="https://picsum.photos/id/{{$loremId}}/600/400" class="card-img-top" alt="LoremPicsum placeholder photo for house" onerror="this.src='/images/house-4.jpg';this.onerror=null;">
                         </div>
                         <div class="rent_home_card_data">
-                            <h5 class="rent_home_card_price">${{number_format($house->price)}}</h5>
+                            <?php
+                            $rentCost = ((($house->price)/50)/12)
+                            ?>
+                            <h5 class="rent_home_card_price">${{number_format(round($rentCost))}}</h5>
                             <p class="rent_home_card_body"><i class="fa fa-solid fa-bed fa-xs"></i> {{$house->bed}} bed <i class="fa fa-solid fa-bath fa-xs"></i> {{$house->bath}} bath, <i class="fa fa-solid fa-caret-up"></i> {{$house->sqft}} sqft</p>
                             <p class="rent_home_card_address">{{$house->street_address}}</p>
                             <p class="rent_home_card_state"> {{$house->street_city}}, {{$house->street_state}}</p>
@@ -189,6 +182,12 @@
                     </a>
                 </div>
                 @endforeach
+            @endif
+            @if(count($houses) < 1)
+                <div class="no_house_error">
+                    <h1>Were Sorry!</h1>
+                    <p>We dont have any houses that match your search results. Please try again later, or update your filter preferences.</p>
+                </div>
             @endif
     </div>
     <div class="rent_homes_cards_pagination mb-4">

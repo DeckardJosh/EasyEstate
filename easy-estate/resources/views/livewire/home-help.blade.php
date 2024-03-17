@@ -3,7 +3,7 @@
     <div class="help_container">
         <div class="help_item">
             <div class="help_item_image_wrapper">
-                <image src="/images/buy.png" class="help_item_image" alt="..."/>
+                <image src="/images/buy_icon_color.png" class="help_item_image" alt="..."/>
             </div>
             <h3 class="help_item_header">Buy a home</h3>
             <p class="help_item_body">With over 200 home for sale available on the website, Easy Estate can match you with a house you will want to call home.</p>
@@ -13,7 +13,7 @@
         </div>
         <div class="help_item">
             <div class="help_item_image_wrapper">
-                <image src="/images/rent.png" class="help_item_image" alt="..."/>
+                <image src="/images/rent_icon_color.png" class="help_item_image" alt="..."/>
             </div>
             <h3 class="help_item_header">Rent a home</h3>
             <p class="help_item_body">With filters and a vast variety, Easy Estate can help you easily find a home or apartment for rent that you'll love.</p>
@@ -23,7 +23,7 @@
         </div>
         <div class="help_item">
             <div class="help_item_image_wrapper">
-                <image src="/images/about.png" class="help_item_image" alt="..."/>
+                <image src="/images/about_us_color.png" class="help_item_image" alt="..."/>
             </div>
             <h3 class="help_item_header">About Us</h3>
             <p class="help_item_body">Learn more about us as a business! We are here to help you, and sometimes it takes getting to know us to put your mind at ease!</p>
